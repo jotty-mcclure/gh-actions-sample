@@ -1,6 +1,5 @@
 name: build
-on:
-  commit:
+on: push
 
 jobs:
   build:
