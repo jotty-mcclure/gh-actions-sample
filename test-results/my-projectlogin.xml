@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="Login" package="My Project" timestamp="2021-05-12T19:34:18.753Z" failures="8">
+        <testcase name="A11yElementFocusBox">
+            <failure message="Ensures each element has an accessibility path that encapsulates its own visual frame." impact="Moderate">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/a11y-element-focus-box.html</failure>
+        </testcase>
+        <testcase name="ActiveControlName">
+            <failure message="Ensures active controls must have an accessible name." impact="Critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/active-control-name.html</failure>
+        </testcase>
+        <testcase name="CollidingControls">
+            <failure message="Active Controls' bounds should not intersect." impact="Moderate">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/colliding-controls.html</failure>
+        </testcase>
+        <testcase name="CollidingViews">
+            <failure message="Views with important information should not intersect.">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/colliding-views.html</failure>
+        </testcase>
+        <testcase name="LabelInName">
+            <failure message="Any focusable active controls with visible text should have that exact same visible text in the accessible name (accessibilityLabel)." impact="Critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/label-in-name.html</failure>
+        </testcase>
+        <testcase name="LabelAtFront">
+            <failure message="Any visible text of focusable active controls should be at the start of the accessible name.">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/label-at-front.html</failure>
+        </testcase>
+        <testcase name="NestedActiveControls">
+            <failure message="Active Controls should not be nested together -- they need to be individually focusable by VoiceOver." impact="Critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/nested-active-controls.html</failure>
+        </testcase>
+        <testcase name="NestedElementsName">
+            <failure message="Text within a focusable view must have all visible text be read out by VoiceOver." impact="Critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/nested-elements-name.html</failure>
+        </testcase>
+    </testsuite>
+</testsuites>
