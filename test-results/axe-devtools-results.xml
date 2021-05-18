@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites >
+<testsuite name="HRA11Y.PTOModal" package="HRA11Y" timestamp="2021-05-14T13:29:27-0400">
+<properties >
+<property name="platform.userAgent" value="" />
+<property name="platform.testMachine" value="" />
+<property name="testSubject.fileName" value="http://localhost/" />
+<property name="testSubject.lineNum" value="-1" />
+</properties>
+<testcase name="duplicate-id" />
+</testsuite>
+<testsuite name="HRA11Y.FormControl" package="HRA11Y" timestamp="2021-05-14T13:29:27-0400">
+<properties >
+<property name="platform.userAgent" value="" />
+<property name="platform.testMachine" value="" />
+<property name="testSubject.fileName" value="http://localhost/" />
+<property name="testSubject.lineNum" value="-1" />
+</properties>
+<testcase name="aria-valid-attr">
+<failure message="Ensures attributes that begin with aria- are valid ARIA attributes
+https://dequeuniversity.com/rules/axe/4.1/aria-valid-attr?application=axeAPI" impact="critical">
+http://localhost/CSS Path: #my-form-element
+HTML: &amp;lt;input id=&amp;quot;my-form-element&amp;quot; name=&amp;quot;formElement&amp;quot; aria-no_going_to_work=&amp;quot;&amp;quot; placeholder=&amp;quot;&amp;quot; type=&amp;quot;input&amp;quot; class=&amp;quot;form-control&amp;quot; value=&amp;quot;is it the same?&amp;quot;&amp;gt;
+</failure>
+</testcase>
+<testcase name="label">
+<failure message="Ensures every form element has a label
+https://dequeuniversity.com/rules/axe/4.1/label?application=axeAPI" impact="critical">
+http://localhost/CSS Path: #my-form-element
+HTML: &amp;lt;input id=&amp;quot;my-form-element&amp;quot; name=&amp;quot;formElement&amp;quot; aria-no_going_to_work=&amp;quot;&amp;quot; placeholder=&amp;quot;&amp;quot; type=&amp;quot;input&amp;quot; class=&amp;quot;form-control&amp;quot; value=&amp;quot;is it the same?&amp;quot;&amp;gt;
+</failure>
+</testcase>
+<testcase name="aria-allowed-attr" />
+<testcase name="aria-valid-attr-value" />
+<testcase name="duplicate-id-active" />
+<testcase name="form-field-multiple-labels" />
+</testsuite>
+<testsuite name="HRA11Y.Avitar" package="HRA11Y" timestamp="2021-05-14T13:29:27-0400">
+<properties >
+<property name="platform.userAgent" value="" />
+<property name="platform.testMachine" value="" />
+<property name="testSubject.fileName" value="http://localhost/" />
+<property name="testSubject.lineNum" value="-1" />
+</properties>
+<testcase name="image-alt" />
+</testsuite>
+</testsuites>
