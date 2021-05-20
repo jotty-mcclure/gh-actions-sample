@@ -1,29 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites>
-    <testsuite name="Login" package="My Project" timestamp="2021-05-12T19:34:18.753Z" failures="8">
+<testsuites name="My Project" failures="8" tests="183">
+    <testsuite name="Login" package="My Project" timestamp="2021-05-12T19:34:18.753Z" failures="8" tests="183">
         <testcase name="A11yElementFocusBox">
-            <failure message="Ensures each element has an accessibility path that encapsulates its own visual frame." impact="Moderate">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/a11y-element-focus-box.html</failure>
+            <failure message="Ensures each element has an accessibility path that encapsulates its own visual frame." impact="moderate">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/a11y-element-focus-box.html
+
+Guidelines:
+Best Practice
+
+Properties:
+ isAccessibilityFocusable: true
+ accessibilityPath: [object Object]
+ className: CauldronButton
+ inheritedType: control
+ boundsInScreen: [object Object]
+</failure>
         </testcase>
         <testcase name="ActiveControlName">
-            <failure message="Ensures active controls must have an accessible name." impact="Critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/active-control-name.html</failure>
+            <failure message="Ensures active controls must have an accessible name." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/active-control-name.html
+
+Guidelines:
+WCAG 4.1.2
+
+Properties:
+ isAccessibilityFocusable: true
+ isActiveControl: true
+ name: null
+ className: UISwitch
+ inheritedType: control
+</failure>
         </testcase>
         <testcase name="CollidingControls">
-            <failure message="Active Controls' bounds should not intersect." impact="Moderate">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/colliding-controls.html</failure>
+            <failure message="Active Controls' bounds should not intersect." impact="moderate">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/colliding-controls.html
+
+Guidelines:
+Platform Guideline
+
+Properties:
+ isVisibleToUser: true
+ isAccessibilityFocusable: true
+ isInActiveControl: false
+ isActiveControl: true
+ className: BorderedButton
+ inheritedType: control
+ boundsInScreen: [object Object]
+</failure>
         </testcase>
         <testcase name="CollidingViews">
-            <failure message="Views with important information should not intersect.">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/colliding-views.html</failure>
+            <failure message="Views with important information should not intersect.">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/colliding-views.html
+
+Guidelines:
+Platform Guideline
+
+Properties:
+ isVisibleToUser: true
+ isAccessibilityFocusable: true
+ isInActiveControl: false
+ isActiveControl: false
+ className: CauldronLabel
+ inheritedType: textElement
+ boundsInScreen: [object Object]
+</failure>
         </testcase>
         <testcase name="LabelInName">
-            <failure message="Any focusable active controls with visible text should have that exact same visible text in the accessible name (accessibilityLabel)." impact="Critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/label-in-name.html</failure>
+            <failure message="Any focusable active controls with visible text should have that exact same visible text in the accessible name (accessibilityLabel)." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/label-in-name.html
+
+Guidelines:
+WCAG 2.5.3
+
+Properties:
+ isActiveControl: true
+ expectedValue: null
+ name: Sasquatch
+ textOfSelfAndDescendants: Menu
+ className: CauldronButton
+ value: null
+</failure>
         </testcase>
         <testcase name="LabelAtFront">
-            <failure message="Any visible text of focusable active controls should be at the start of the accessible name.">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/label-at-front.html</failure>
+            <failure message="Any visible text of focusable active controls should be at the start of the accessible name.">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/label-at-front.html
+
+Guidelines:
+WCAG 2.5.3 Best Practice
+
+Properties:
+ isActiveControl: true
+ name: Open menu
+ textOfSelfAndDescendants: Menu
+ className: CauldronButton
+ value: null
+</failure>
         </testcase>
         <testcase name="NestedActiveControls">
-            <failure message="Active Controls should not be nested together -- they need to be individually focusable by VoiceOver." impact="Critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/nested-active-controls.html</failure>
+            <failure message="Active Controls should not be nested together -- they need to be individually focusable by VoiceOver." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/nested-active-controls.html
+
+Guidelines:
+WCAG 2.1.1
+
+Properties:
+ isAccessibilityFocusable: true
+ className: BorderedView
+ numberAccessibilityCustomActions: 0
+ inheritedType: genericElement
+</failure>
         </testcase>
         <testcase name="NestedElementsName">
-            <failure message="Text within a focusable view must have all visible text be read out by VoiceOver." impact="Critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/nested-elements-name.html</failure>
+            <failure message="Text within a focusable view must have all visible text be read out by VoiceOver." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/nested-elements-name.html
+
+Guidelines:
+WCAG 2.1.1
+
+Properties:
+ isActiveControl: false
+ name: null
+ textOfSelfAndDescendants: Here we have multiple labels worth of text.,The entire view containing all of these labels is VoiceOver focusable.,The focusable view's accessibility label is only set to read the first label.
+ className: UIView
+</failure>
         </testcase>
     </testsuite>
 </testsuites>
