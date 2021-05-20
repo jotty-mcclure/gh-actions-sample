@@ -4,10 +4,10 @@
         <testcase name="SupportsDynamicType">
             <failure message="Text controls should respond to system requests for Type Size changes." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/supports-dynamic-type.html
 
-&lt;b&gt;Guidelines:&lt;/b&gt;
+Guidelines:
 Platform Guideline
 
-&lt;b&gt;Properties:&lt;/b&gt;
+Properties:
  overridesTraitCollectionDidChange: false
  isInTableViewCell: false
  supportsAutoAdjustment: false
@@ -21,10 +21,10 @@ Platform Guideline
         <testcase name="SupportsDynamicType">
             <failure message="Text controls should respond to system requests for Type Size changes." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/supports-dynamic-type.html
 
-&lt;b&gt;Guidelines:&lt;/b&gt;
+Guidelines:
 Platform Guideline
 
-&lt;b&gt;Properties:&lt;/b&gt;
+Properties:
  overridesTraitCollectionDidChange: false
  isInTableViewCell: false
  supportsAutoAdjustment: true
