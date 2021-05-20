@@ -3,14 +3,36 @@
     <testsuite name="Supports Dynamic Type" timestamp="2021-03-30T20:47:16.359Z" failures="2" tests="68">
         <testcase name="SupportsDynamicType">
             <failure message="Text controls should respond to system requests for Type Size changes." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/supports-dynamic-type.html
-Guidelines: [{"name":"Platform Guideline","uri":"https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/"}]
+
+Guidelines:
+ 0: Platform Guideline
+
 Properties:
- {"overridesTraitCollectionDidChange":false,"isInTableViewCell":false,"supportsAutoAdjustment":"false","className":"UILabel","inheritedType":"textElement","text":"This text will never adjust.","respondsToContentSizeNotification":false,"adjustsFontForContentSizeCategory":"false"}
+ overridesTraitCollectionDidChange: false
+ isInTableViewCell: false
+ supportsAutoAdjustment: false
+ className: UILabel
+ inheritedType: textElement
+ text: This text will never adjust.
+ respondsToContentSizeNotification: false
+ adjustsFontForContentSizeCategory: false
 </failure>
+        </testcase>
+        <testcase name="SupportsDynamicType">
             <failure message="Text controls should respond to system requests for Type Size changes." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/supports-dynamic-type.html
-Guidelines: [{"name":"Platform Guideline","uri":"https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/"}]
+
+Guidelines:
+ 0: Platform Guideline
+
 Properties:
- {"overridesTraitCollectionDidChange":false,"isInTableViewCell":false,"supportsAutoAdjustment":"true","className":"UILabel","inheritedType":"textElement","text":"This text adjusts when app is first opened.","respondsToContentSizeNotification":false,"adjustsFontForContentSizeCategory":"false"}
+ overridesTraitCollectionDidChange: false
+ isInTableViewCell: false
+ supportsAutoAdjustment: true
+ className: UILabel
+ inheritedType: textElement
+ text: This text adjusts when app is first opened.
+ respondsToContentSizeNotification: false
+ adjustsFontForContentSizeCategory: false
 </failure>
         </testcase>
     </testsuite>
