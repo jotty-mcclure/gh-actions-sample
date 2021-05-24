@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="v0.1.2 Results" failures="4" tests="86">
+    <testsuite name="A11y Inspector Rules" package="v0.1.2 Results" timestamp="2021-05-18T12:46:42.298Z" failures="4" tests="86">
+        <testcase name="FocusableText">
+            <failure message="All text must be accessible by VoiceOver and have an Accessible Name." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/focusable-text.html
+
+Guidelines:
+WCAG 4.1.2
+
+Properties:
+ isAccessibilityFocusable: false
+ isInFocusableView: false
+ className: UILabel
+ inheritedType: textElement
+ text: Worldspace Attest
+</failure>
+        </testcase>
+        <testcase name="SupportsDynamicType">
+            <failure message="Text controls should respond to system requests for Type Size changes." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/supports-dynamic-type.html
+
+Guidelines:
+Platform Guideline
+
+Properties:
+ overridesTraitCollectionDidChange: false
+ isInTableViewCell: false
+ supportsAutoAdjustment: true
+ className: UILabel
+ inheritedType: textElement
+ text: Worldspace Attest
+ respondsToContentSizeNotification: false
+ adjustsFontForContentSizeCategory: false
+</failure>
+        </testcase>
+        <testcase name="ImageViewName">
+            <failure message="ImageViews must either have an Accessible Name or not be VoiceOver-focusable." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/imageview-name.html
+
+Guidelines:
+WCAG 1.1.1
+
+Properties:
+ isAccessibilityFocusable: true
+ name: null
+ isInFocusableView: false
+ className: UIImageView
+ inheritedType: image
+</failure>
+        </testcase>
+        <testcase name="LabelInName">
+            <failure message="Any focusable active controls with visible text should have that exact same visible text in the accessible name (accessibilityLabel)." impact="critical">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/label-in-name.html
+
+Guidelines:
+WCAG 2.5.3
+
+Properties:
+ isActiveControl: true
+ expectedValue: null
+ name: Sasquatch
+ textOfSelfAndDescendants: Menu
+ className: CauldronButton
+ value: null
+</failure>
+        </testcase>
+    </testsuite>
+</testsuites>

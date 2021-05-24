@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="v0.1.2 Results" failures="1" tests="56">
+    <testsuite name="Label At Front" package="v0.1.2 Results" timestamp="2021-04-15T13:44:41.790Z" failures="1" tests="56">
+        <testcase name="LabelAtFront">
+            <failure message="Any visible text of focusable active controls should be at the start of the accessible name.">Learn more about this issue: https://mobile-docs.deque.com/attest/ios/label-at-front.html
+
+Guidelines:
+WCAG 2.5.3 Best Practice
+
+Properties:
+ isActiveControl: true
+ name: Open up the menu
+ textOfSelfAndDescendants: Menu
+ className: NotBestPracticeLabel
+ value: null
+</failure>
+        </testcase>
+    </testsuite>
+</testsuites>
