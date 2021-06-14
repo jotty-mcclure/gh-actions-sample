@@ -16,5 +16,5 @@ steps:
     testResultsFiles: '**/test-results/*.xml' 
 - task: publishhtmlreport@1
   inputs:
-    htmlType: 'genericHTML'
-    htmlPath: '$(Build.SourcesDirectory)/test-results/**.html'
+    htmlType: 'OtherComplexReport'
+    JmeterReportsPath: '$(Build.SourcesDirectory)/test-results/'
