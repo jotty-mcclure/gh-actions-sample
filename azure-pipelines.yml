@@ -17,4 +17,4 @@ steps:
 - task: publishhtmlreport@1
   inputs:
     htmlType: 'genericHTML'
-    htmlPath: '$(Build.SourcesDirectory)/test-results/*.html'
+    htmlPath: '$(Build.SourcesDirectory)/test-results/v0-1-2-resultsa11y-inspector-rules.html'
